@@ -35,7 +35,7 @@ input{
     outline: none;
     border: 2px solid #bbb;
     font-weight: 600;
-    color: rgb(75, 30, 30);
+    color: rgb(99, 36, 36);
 }
 input:not([type=submit]){
     padding: 10px;
@@ -45,6 +45,9 @@ input:not([type=submit]){
 input[type=submit]{
     padding:10px;
     margin-top:5px;
+}
+input:hover{
+    border-color: rgb(99, 36, 36)
 }
 .resultado{
     display: flex;

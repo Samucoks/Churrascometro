@@ -34,7 +34,7 @@ function calcular(){
     style(cervejaT)
 
     //Bebidas
-    let bebida = ((adultosNB *400) + ((adultosB + criancas) * 200))* duracao
+    let bebida = ((adultosNB *250) + ((adultosB + criancas) * 125))* duracao
     let bebidaL = bebida / 1000
     bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
     style(bebidaT)
@@ -51,7 +51,7 @@ function calcular(){
         cervejaT.innerHTML = 'Quantidade de cerveja necessária: '+ cervejaL +'L'
         style(cervejaT)
 
-        let bebida = (((adultosB + criancas)*400)/2) * duracao
+        let bebida = ((adultosB + criancas)*125) * duracao
         let bebidaL = bebida / 1000
         bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
         style(bebidaT)
@@ -64,7 +64,7 @@ function calcular(){
         style(carneT)
 
         //Bebidas
-        let bebida = ((adultosNB *350) + (criancas * 150))* duracao
+        let bebida = ((adultosNB *250) + (criancas * 125))* duracao
         let bebidaL = bebida / 1000
         bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
         style(bebidaT)
@@ -83,7 +83,7 @@ function calcular(){
         style(cervejaT)
 
         //Bebidas
-        let bebida = ((adultosNB *400) + ((adultosB) * 200))* duracao
+        let bebida = ((adultosNB *250) + ((adultosB) * 125))* duracao
         let bebidaL = bebida / 1000
         bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
         style(bebidaT)
@@ -110,7 +110,7 @@ function calcular(){
         style(carneT)
 
         //Bebidas
-        let bebida = (adultosNB *400)* duracao
+        let bebida = (adultosNB *250)* duracao
         let bebidaL = bebida / 1000
         bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
         style(bebidaT)
@@ -122,12 +122,28 @@ function calcular(){
         carneT.style.tex
         style(carneT)
         //Bebidas
-        let bebida = (criancas * 200)* duracao
+        let bebida = (criancas * 125)* duracao
         let bebidaL = bebida / 1000
         bebidaT.innerHTML = 'Quantidade de bebida necessária: '+ bebidaL +'L'
         style(bebidaT)
     }
 }
+
+// Efeito h1 
+ let h1 = document.getElementsByTagName('h1')[0]
+ h1.onclick = ()=>{
+    let int1 = setInterval(()=>{
+        h1.style.color ='#fff'
+    }, 100)
+    let int2 = setInterval(()=>{
+        h1.style.color ='rgb(73, 39, 39)'
+    }, 350)
+    setTimeout(()=>{
+        clearInterval(int1)
+        clearInterval(int2)
+    },15000)
+ }
+
 
 
 
